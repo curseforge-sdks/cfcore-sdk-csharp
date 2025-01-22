@@ -1,22 +1,25 @@
 ﻿# cfcore-unity-ui
 
-This readme file will try to explain how to get started with adding our UI
-component into your game.
+This readme file contains information on how to get started with adding the cfcore UI component into your game.
+
+## Setup your game
+
+To get started, follow these steps:
+
+- Unzip the cfcore-unity-ui-x.y.z.zip into your project's Assets folder (usually it will reside in a top-level folder named: cfcore-unity-ui)
+- Drag the ApiManager prefab to your scene
+- Drag the CFCoreModBrowser prefab to your scene (Import TMP Essentials if required)
+- Some versions of Unity will require you to add the UnityEngine.InputSystem package (Window > Package Manager - select Unity Registry and install Input System) - restart Unity editor after this step
+- An "Eternal" menu item should now appear (next to Window) - Select it and then "Edit Settings" to fill in the Game Id and the Api Key of your game:
+  - If you haven't already, create an account on https://console.curseforge.com/ + add a game to your account
+  - Use the Game Id and the Api key of your game to fill in the ApiManager prefab in the READ_APIManager script the coresponding fields
+
+For more information please read https://docs.curseforge.com/#getting-started
 
 ## Sample Scene
 
 The sample scene is a demo that includes everything you need to browse and
 download the mods for a game.
-
-## Setup your game
-
-- Add the ApiManager prefab to your scene.
-- Fill in the Game Id and the Api Key of your game:
-  - Create account in https://console.curseforge.com/
-  - Add a game to your account
-  - Use the Game Id  and the Api key of your game to fill in the ApiManager prefab in the READ_APIManager script the coresponding fields
-
-For more information please read https://docs.curseforge.com/#getting-started
 
 ## Usage
 
